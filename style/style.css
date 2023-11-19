@@ -220,7 +220,7 @@ body {
 /*  The image of the map inside the blue medium container */
 .map-image {
 	margin: 5%;
-	max-width: 70%;
+	max-width: 50%;
 	padding: 2%;
 	height: auto;
 }
@@ -338,7 +338,7 @@ body {
 /* Style for the main container on p32 and p48 pages */
 .main-container {
 	margin: 2%;
-	background-color: #F45B69;
+	background-color: #C74D62;
 	color: #fff;
 	padding: 3%;
 	font-family: Inter;
@@ -354,7 +354,7 @@ body {
 .main-container h1,
 .main-container h2,
 .main-container h3 {
-	color: #333;
+	color: #130201;
 	font-weight: bold;
 	font-size: 200%;
 	margin-bottom: 2%;
@@ -392,7 +392,7 @@ body {
 /* Style for library container */
 .library {
 	flex: 1;
-	background-color: #7598BD;
+	background-color: #9ABAD6;
 	padding: 2%;
 	margin: 1%;
 	box-sizing: border-box;
@@ -401,7 +401,7 @@ body {
 /* Style for canteen container */
 .canteen {
 	flex: 1;
-	background-color: #2fafda;
+	background-color: #2E7FA1;
 	padding: 2%;
 	margin: 1%;
 	box-sizing: border-box;
