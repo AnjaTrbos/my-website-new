@@ -458,7 +458,7 @@ body {
 .main-container-new {
 	margin: 2%;
 	background-color: #A1B3F5;
-	color: #333;
+	color: #000;
 	padding: 3%;
 	font-family: 'Play', sans-serif;
 	font-size: 100%;
@@ -479,7 +479,7 @@ body {
 /* Style for main container headings */
 .main-container-new h2,
 .main-container-new h3 {
-	color: #E75480;
+	color: #93012E;
 	font-weight: bold;
 }
 
