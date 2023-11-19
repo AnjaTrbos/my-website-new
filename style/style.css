@@ -503,24 +503,8 @@ body {
 	display: flex;
 	justify-content: space-around;
   }
-  @media screen and (max-width: 600px) {
-	.full-nav {
-	  flex-direction: column;
-	  align-items: stretch;
-	}
+
   
-	.navbar {
-	  margin-bottom: 10px;
-	}
-  
-	.navbar-links {
-	  width: 100%; /* Make the navigation links take up full width */
-	}
-  
-	.navbar-links a {
-	  width: 100%; /* Make each navigation link take up full width */
-	}
-  }
   
 
   
