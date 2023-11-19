@@ -185,8 +185,9 @@ body {
 
 /*  The first  image of oslomet inside the big container on the main page  */
 .front-image {
-	margin-left: 5%;
 	max-width: 50%;
+	margin-left: 5%;
+	height: auto;
 }
 
 /* The medium blue box under the main container on the main page*/
@@ -221,6 +222,7 @@ body {
 	margin: 5%;
 	max-width: 70%;
 	padding: 2%;
+	height: auto;
 }
 
 /*Third and the smallest container on the main page */
@@ -254,6 +256,7 @@ body {
 .pilestredet-image {
 	margin-top: 5%;
 	max-width: 100%;
+	height: auto;
 }
 
 /*Flex for the medium and small container so that they are next to each other */
