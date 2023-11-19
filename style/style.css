@@ -157,7 +157,7 @@ body {
 
 /* Style for the container box */
 .big-container {
-	background-color: #F45B69;
+	background-color: #C74D62;
 	padding: 5%;
 	display: flex;
 	align-items: center;
@@ -192,7 +192,7 @@ body {
 
 /* The medium blue box under the main container on the main page*/
 .medium-container {
-	background-color: #7598BD;
+	background-color: #9ABAD6;
 	;
 	padding: 3%;
 	display: block;
