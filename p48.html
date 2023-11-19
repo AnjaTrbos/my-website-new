@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <title>OsloMet campus</title>
+  </head>
+  <body>
+    <header>
+      <!--container around the whole nav bar  -->
+      <div class="full-nav">
+        <!--container with everything inside of the nav bar  -->
+        <div class="navbar">
+          <!--dropdown menus in the nav bar  -->
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='index.html'">Home <i class="fa fa-caret-down"></i>
+            </button>
+            <!--dropdown menus to take the user to certain places in the text, mareked with an id  -->
+            <div class="dropdown-content">
+              <a href="#welcome">Welcome</a>
+              <a href="#campus">Campus map</a>
+              <a href="#buildings">Buildings on campus</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='p32.html'">Pilestredet 32 <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#andrea">Andrea Arntzen</a>
+              <a href="#history">History </a>
+              <a href="#library-nav">Library</a>
+              <a href="#canteen-nav">Canteen</a>
+              <a href="#auditorium-nav">Auditorium</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='p48.html'">Pilestredet 48 <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#media-p48">Media building</a>
+              <a href="#canteen-p48">Canteen</a>
+              <a href="#library-p48">Library</a>
+              <a href="#auditorium-p48">Auditorium</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='accessability.html'">Accessability <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#introduction">Introduction</a>
+              <a href="#rules-followed">Rules we followed</a>
+              <a href="#old-vs-new">Testing</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='data1100.html'">Technology and sustainability <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#case">the Case</a>
+              <a href="#reactions">Our reactions</a>
+              <a href="#key-terms">Key terms</a>
+              <a href="#negative">Negative consequences</a>
+              <a href="#positive">Positive consequences</a> 
+              <a href="#sources">Sources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--container that is containing the whole content of this page -->
+      <div class="main-container">
+        <h1>Pilestredet 48 Eva Balkes hus</h1>
+        <h2>Media and Communication Building</h2>
+        <!-- container for everything in pink, before the boxes with canteen library and auditorim, used for flex-->
+        <div id="media-p48" class="top-container">
+          <img src="media/p48-entrance.jpg" alt="door of the pilestredet 48 building with a big number 48 across it" title="Original picture by Anja Trbos">
+          <!-- main content paragraph-->
+          <p> Pilestredet 48 is an important building within the OsloMet (Oslo Metropolitan University) campus. Located in the heart of Oslo, Norway, it serves a variety of academic and administrative purposes, contributing to the university's vibrant academic environment. This is the media building, so this building has lots of special rooms such as photo and audio studios. This building, just like the rest of them, has a big auditorium and a nice little canteen. </p>
+        </div>
+        <!-- containter for boxes about different parts of the building that are different colors  -->
+        <div id="library-p48" class="content-container">
+          <!-- this div is named library to inherit css from the previous page even tho the content is not about the library -->
+          <!-- first container in the row of parts of the building -->
+          <div class="library">
+            <h2>Studios</h2>
+            <!-- studios paragraph  -->
+            <p> This is the media building, so having studios where students can practice media production is essential to their education. OsloMet provides 2 photo labs, two radio studios, one TV studio, and ten audio rooms. Only students who study media have access to these rooms to secure a time slot when they are available. </p>
+          </div>
+          <!-- second container in the row of parts of the building -->
+          <div id="canteen-p48" class="canteen">
+            <h2>The Canteen</h2>
+            <!-- canteen  paragraph  -->
+            <p> The canteen of P48 is a much smaller one compared to P32. It doesn't offer the hot homemade meals that most bigger canteens offer. It doesn't have a salad bar or anything similar, but there is plenty of sandwiches, snacks, and small foods for on the go. There is also an exceptional variety of energy drinks that are undoubtedly the best seller here. </p>
+            <img src="media/p48-canteen.jpg" alt="entrance to the small canteen" title="Original photo by Anja Trbos">
+          </div>
+          <!-- third container in the row of parts of the building -->
+          <div id="auditorium-p48" class="auditorium">
+            <!-- third container in the row of parts of the building -->
+            <h2>The Auditorium</h2>
+            <!-- auditorium paragraph  -->
+            <p> There are two auditoriums in this building. One of them seats 136 students, and the other one is a bit smaller with only 99 seats. They are standard OsloMet auditoriums with all of the necessary audio-visual equipment. </p>
+            <img src="media/p48-auditorium.jpg" alt="door of one of the auditoriums in pilestredet 48, the lecutre was going so the photographer could only take a photo of the door" title="Original photo by Anja Trbos">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--footer with three rows and links -->
+    <!--the links are dummy and take to social media pages -->
+    <footer>
+      <div class="footer">
+        <!--first row with social media -->
+        <div class="row">
+          <a href="https://www.facebook.com/">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/">
+            <i class="fa fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <!--second row with contact us info -->
+        <!--links not connected to anything, only for astetic pourposes -->
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
+          </ul>
+        </div>
+        <!--Third row with copyright -->
+        <div class="row"> Copyright © 2023 </div>
+      </div>
+    </footer>
+  </body>
+</html>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <title>OsloMet campus</title>
+  </head>
+  <body>
+    <header>
+      <!--container around the whole nav bar  -->
+      <div class="full-nav">
+        <!--container with everything inside of the nav bar  -->
+        <div class="navbar">
+          <!--dropdown menus in the nav bar  -->
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='index.html'">Home <i class="fa fa-caret-down"></i>
+            </button>
+            <!--dropdown menus to take the user to certain places in the text, mareked with an id  -->
+            <div class="dropdown-content">
+              <a href="#welcome">Welcome</a>
+              <a href="#campus">Campus map</a>
+              <a href="#buildings">Buildings on campus</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='p32.html'">Pilestredet 32 <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#andrea">Andrea Arntzen</a>
+              <a href="#history">History </a>
+              <a href="#library-nav">Library</a>
+              <a href="#canteen-nav">Canteen</a>
+              <a href="#auditorium-nav">Auditorium</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='p48.html'">Pilestredet 48 <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#media-p48">Media building</a>
+              <a href="#canteen-p48">Canteen</a>
+              <a href="#library-p48">Library</a>
+              <a href="#auditorium-p48">Auditorium</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='accessability.html'">Accessability <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#introduction">Introduction</a>
+              <a href="#rules-followed">Rules we followed</a>
+              <a href="#old-vs-new">Testing</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="location.href='data1100.html'">Technology and sustainability <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#case">the Case</a>
+              <a href="#reactions">Our reactions</a>
+              <a href="#key-terms">Key terms</a>
+              <a href="#negative">Negative consequences</a>
+              <a href="#positive">Positive consequences</a> 
+              <a href="#sources">Sources</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- frist pink container on the main page, id to connect it to the nav bar, container for putting it all togheter    -->
+      <div id="welcome" class="big-container">
+        <div>
+          <!--class to style only the title in the big container -->
+          <div class="main-title">
+            <h1>Welcome to our website dedicated to OsloMet!</h1>
+          </div>
+          <!--class to style the main paragraph in the big container  -->
+          <p class="main-paragraph"> Explore some of the buliding of the OsloMet Univeristy campus in Pilestredet. </p>
+        </div>
+        <!--First photo on the index page  -->
+        <img class="front-image" src="media/om-frontpage.jpg" alt="Front side of the OsloMet p35 building" title="Foto: Jørgen Svarstad, Forskerforum">
+      </div>
+      <!--class to put the bottom containers in a grid or a flex  -->
+      <div class="medium-small-grid">
+        <!--blue medium container under the big pink one, id to transport here from the navbar  -->
+        <div id="campus" class="medium-container">
+          <!--div that contains the title and the paragraph  -->
+          <div>
+            <div class="campus-title">
+              <h2>The Campus</h2>
+            </div>
+            <p class="campus-paragraph"> We will provide a general overview of the school campus and also focus on the buildings in Pilestredet 32 and 48 on our other pages. </p>
+          </div>
+          <!--picture of the map in the second container -->
+          <img class="map-image" src="media/map.png" alt=" illustration dispaying the postion of the campus in Oslo, bulidings are in orange color" title="Photo: Oslomet, source khrono.no">
+        </div>
+        <!--green small container next to the blue medium container, id to be able to trasport here from the nav-->
+        <div id="buildings" class="small-container">
+          <div>
+            <div class="buildings">
+              <h2>Buildings on Campus:</h2>
+            </div>
+            <!--unordered elements in the list that are some of the buildings on campus  -->
+            <div class="building-list">
+              <ul>
+                <li>Pilestredet park 35</li>
+                <li>Pilestredet 32</li>
+                <li>Pilestredet 35</li>
+                <li>Pilestredet 44</li>
+                <li>Pilestredet 48</li>
+                <li>Pilestredet 50</li>
+                <li>Pilestredet 52</li>
+                <li>Stensberggata 26/28</li>
+              </ul>
+            </div>
+          </div>
+          <!--picture in the third container -->
+          <img class="pilestredet-image" src="media/pilestredet.jpg" alt="Entrance to the main OsloMet campus, that looks like a part of the brewery" title="Photo: Oslomet, source Oslomet.no">
+        </div>
+      </div>
+    </main>
+    <!--footer with three rows and links -->
+    <!--the links are dummy and take to social media pages -->
+    <footer>
+      <div class="footer">
+        <!--first row with social media -->
+        <div class="row">
+          <a href="https://www.facebook.com/">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/">
+            <i class="fa fa-youtube"></i>
+          </a>
+          <a href="https://twitter.com/?lang=en">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <!--second row with contact us info -->
+        <!--links not connected to anything, only for astetic pourposes -->
+        <div class="row">
+          <ul>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Our Services</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Career</a>
+            </li>
+          </ul>
+        </div>
+        <!--Third row with copyright -->
+        <div class="row"> Copyright © 2023  </div>
+      </div>
+    </footer>
+  </body>
+</html>

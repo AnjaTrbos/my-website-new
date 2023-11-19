@@ -1,0 +1,528 @@
+/* Body */
+body {
+	background-color: #333;
+}
+
+/* Navbar container */
+/* Navbar taken and changed from https://www.w3schools.com/Css/css_dropdowns.asp */
+.full-nav {
+	border-top-width: 2%;
+	border-top-style: solid;
+	border-top-color: #fff;
+	border-bottom-width: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	display: flex;
+	/* Use flexbox to align elements horizontally */
+	justify-content: space-between;
+	/* Distribute space between elements */
+	align-items: center;
+	/* Vertically center the elements */
+	padding-top: 0%;
+	padding-right: 2%;
+	padding-bottom: 0%;
+	padding-left: 2%;
+}
+
+/*Everything inside the nav bar*/
+.navbar {
+	display: inline;
+	/*  making the element inline */
+	overflow: hidden;
+	/* Hide any content that overflows the boundaries of the element */
+	background-color: #333;
+	font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 100%;
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+	padding-right: 6%;
+	padding-bottom: 5%;
+	padding-left: 6%;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown buttons with the names of the individual pages */
+.dropdown .dropbtn {
+	font-size: 100%;
+	border: none;
+	outline: none;
+	color: white;
+	padding-top: 14px;
+	/*padding is in pixels here becasue the icon for dropdown moves if its not*/
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	background-color: inherit;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0;
+	/* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #F45B69;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow:
+		0px
+		/* horizontal offset */
+		,
+		8px
+		/* vertical offset */
+		,
+		16px
+		/* blur radius */
+		,
+		0px
+		/* spread radius */
+		,
+		#00000033;
+	/* color */
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: #000;
+	padding-top: 12px;
+	/* values here also had to be in pixels to prevent moving*/
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/* Add this media query for responsiveness on small screens */
+@media screen and (max-width: 600px) {
+	.navbar {
+	  flex-direction: column;
+	  /* Stack items vertically */
+	  position: relative;
+	  /* Set position to relative for absolute positioning of dropdown */
+	}
+  
+	.navbar a, .dropdown {
+	  float: none;
+	  width: 100%;
+	  text-align: left;
+	  /* Make links and dropdown items full width */
+	}
+  
+	.dropdown {
+	  position: static;
+	  /* Reset position to static to prevent overlap with other elements */
+	}
+  
+	.dropdown-content {
+	  position: absolute;
+	  /* Position dropdown content absolutely */
+	  top: 100%;
+	  /* Place dropdown content below the dropdown button */
+	  left: 0;
+	  /* Align dropdown content with the left side */
+	}
+  }
+
+/* Style for the container box */
+.big-container {
+	background-color: #F45B69;
+	padding: 5%;
+	display: flex;
+	align-items: center;
+	margin: 2%;
+	flex: 1;
+}
+
+/* Style for the title inside the big conrtainer on the main page */
+.main-title {
+	font-family: Inter;
+	font-size: 200%;
+	font-weight: bold;
+	color: #fff;
+}
+
+/* Style for the paragraph under the title on the main page inside the big container */
+.main-paragraph {
+	font-family: Inter;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	font-size: 150%;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*  The first  image of oslomet inside the big container on the main page  */
+.front-image {
+	margin-left: 5%;
+	max-width: 50%;
+}
+
+/* The medium blue box under the main container on the main page*/
+.medium-container {
+	background-color: #7598BD;
+	;
+	padding: 3%;
+	display: block;
+	margin: 2%;
+	flex: 2;
+
+}
+
+/*The title inside the medium blue container on the main page */
+.campus-title {
+	font-family: Inter;
+	font-size: 150%;
+	font-weight: bold;
+	color: #494848;
+}
+
+/* The paragraph under the title and inside the blue container on the main page */
+.campus-paragraph {
+	font-family: Inter;
+	margin-top: 3%;
+	color: #494848;
+	font-weight: bold;
+}
+
+/*  The image of the map inside the blue medium container */
+.map-image {
+	margin: 5%;
+	max-width: 70%;
+	padding: 2%;
+}
+
+/*Third and the smallest container on the main page */
+.small-container {
+	background-color: #DCFDD9;
+	padding: 2%;
+	display: block;
+	margin: 2%;
+	flex: 1;
+}
+
+/* The title in the small container */
+.buildings {
+	font-size: 150%;
+	font-family: Inter;
+	font-weight: bold;
+	color: #000000;
+}
+
+/*The text with the list of bulidings in the small container */
+.building-list {
+	margin-top: 4%;
+	margin-bottom: 4%;
+	font-family: Inter;
+	color: #000000;
+	font-weight: bold;
+
+}
+
+/* The image inside the small container under the list on the front page */
+.pilestredet-image {
+	margin-top: 5%;
+	max-width: 100%;
+}
+
+/*Flex for the medium and small container so that they are next to each other */
+.medium-small-grid {
+	display: flex;
+}
+
+/*Footer found and changed from https://codepen.io/alvarotrigo/pen/ZExxeRz*/
+.footer {
+	background: #d8d0d0;
+	padding-top: 3%;
+	padding-bottom: 0%;
+	font-family: 'Play', sans-serif;
+	text-align: center;
+	margin-top: 20%;
+}
+
+/*The first part of the footer with all the social media icons in it */
+.footer .row {
+	width: 100%;
+	margin: 1% 0%;
+	padding: 0.6% 0%;
+	color: #333;
+	font-size: 80%;
+}
+
+/*Link style for teh social media icons in the first row of the footer*/
+.footer .row a {
+	text-decoration: none;
+	color: #333;
+	transition: 0.5s;
+}
+
+/*Icons in the footer change color when being hooverd over*/
+.footer .row a:hover {
+	color: #fff;
+}
+
+/*with of the first row in the footer*/
+.footer .row ul {
+	width: 100%;
+}
+
+/*elements in the first row of footer to inline*/
+.footer .row ul li {
+	display: inline-block;
+	margin-top: 0%;
+	margin-right: 3%;
+	margin-bottom: 0%;
+	margin-left: 3%;
+}
+
+/*iocns in the footer*/
+.footer .row a i {
+	font-size: 200%;
+	margin: 0% 1%;
+}
+
+/*smaller screen for footer*/
+@media (max-width:720px) {
+	.footer {
+		text-align: left;
+		padding: 5%;
+	}
+
+	.footer .row ul li {
+		display: block;
+		margin-top: 5%;
+		margin-bottom: 0%;
+		text-align: left;
+	}
+
+	.footer .row a i {
+		margin: 0% 3%;
+	}
+}
+
+/*p32 and p48 pages*/
+/* Style for the main container on p32 and p48 pages */
+.main-container {
+	margin: 2%;
+	background-color: #F45B69;
+	color: #fff;
+	padding: 3%;
+	font-family: Inter;
+	font-size: 110%;
+}
+.top-container{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style for the main container headings */
+.main-container h1,
+.main-container h2,
+.main-container h3 {
+	color: #333;
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+.top-container img{
+  max-width: 20%;
+  margin: 2%;
+}
+.content-container img{
+  max-width: 70%;
+  margin: 2%;
+}
+.pink-container img{
+  max-width: 20%;
+  margin: 2%;
+}
+.p32-container{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+/* Style for the main container paragraphs */
+.main-container p {
+	color: #fff;
+	line-height: 1.5;
+  padding: 2%;
+}
+
+/* Style for the content container */
+.content-container {
+	display: flex;
+}
+
+/* Style for library container */
+.library {
+	flex: 1;
+	background-color: #7598BD;
+	padding: 2%;
+	margin: 1%;
+	box-sizing: border-box;
+}
+
+/* Style for canteen container */
+.canteen {
+	flex: 1;
+	background-color: #2fafda;
+	padding: 2%;
+	margin: 1%;
+	box-sizing: border-box;
+}
+
+/* Style for auditorium container */
+.auditorium {
+	flex: 1;
+	background-color: #914658;
+	padding: 2%;
+	margin: 1%;
+	box-sizing: border-box;
+}
+
+/* Style for headings and paragraphs within containers */
+.library h2,
+.canteen h2,
+.auditorium h2,
+.library p,
+.canteen p,
+.auditorium p {
+	color: #fff;
+}
+
+/* technology and sustainablity page*/
+.main-container-new {
+  position: relative;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+
+.overlay-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  text-align: center; 
+  z-index: 1; /* Ensure the title appears above the image */
+  font-size: 800%;
+}
+
+.overlay-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 50%;
+}
+
+/* Style for the main container */
+.main-container-new {
+	margin: 2%;
+	background-color: #A1B3F5;
+	color: #333;
+	padding: 3%;
+	font-family: 'Play', sans-serif;
+	font-size: 100%;
+}
+.column-container{
+  margin: 5%;
+  columns: 2;
+  max-width: 100%; 
+ height: auto;
+
+}
+.column-container img {
+	max-width: 100%;
+	height: auto;
+	display: block; /* This ensures that the margin is applied correctly */
+	margin: 0 auto 20px; /* Center the image horizontally and add some space below each image */
+  }
+/* Style for main container headings */
+.main-container-new h2,
+.main-container-new h3 {
+	color: #E75480;
+	font-weight: bold;
+}
+
+/* Style for main container paragraphs  */
+.main-container-new p {
+	color: #333;
+	line-height: 1.6;
+}
+
+/* Style for links */
+.main-container-new a {
+	color: #0000FF;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+/*Hoover over links*/
+.main-container-new a:hover {
+	color: #F45B69;
+}
+
+/* Style for large screens */
+.full-nav {
+	display: flex;
+	justify-content: space-around;
+  }
+  @media screen and (max-width: 600px) {
+	.full-nav {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+  
+	.navbar {
+	  margin-bottom: 10px;
+	}
+  
+	.navbar-links {
+	  width: 100%; /* Make the navigation links take up full width */
+	}
+  
+	.navbar-links a {
+	  width: 100%; /* Make each navigation link take up full width */
+	}
+  }
+  
+
+  
+
+  
