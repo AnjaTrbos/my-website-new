@@ -132,13 +132,19 @@ body {
 		position: relative;
 		/* Set position to relative for absolute positioning of dropdown */
 		width: 100%;
-		justify-content: flex-start;
+		align-items: flex-start;
 	}
   
 	.navbar a, .dropdown {
 	  width: 100%;
 	  /* Make links and dropdown items full width */
 	}
+	.dropdown {
+		border-bottom-style: solid;
+		border-bottom-color: #fff;
+
+		/* Make links and dropdown items full width */
+	  }
   
 	.dropdown {
 	  position: static;
@@ -151,15 +157,9 @@ body {
 	  top: 100%;
 	  /* Place dropdown content below the dropdown button */
 	}
-	.dropdown .dropbtn{
-		padding-left: 0%;
-	}
 	
-	.navbar,
-	.dropdown {
-		justify-content: flex-start;
-		/* Align items to the start of the container */
-	}
+	
+	
   }
 
 /* Style for the container box */
