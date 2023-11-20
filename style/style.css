@@ -124,19 +124,19 @@ body {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
-/* Add this media query for responsiveness on small screens */
+/* Add this media query for nav responsiveness on small screens */
 @media screen and (max-width: 600px) {
-	.navbar {
-	  flex-direction: column;
-	  /* Stack items vertically */
-	  position: relative;
-	  /* Set position to relative for absolute positioning of dropdown */
+	.full-nav{
+		flex-direction: column;
+		/* Stack items vertically */
+		position: relative;
+		/* Set position to relative for absolute positioning of dropdown */
+		width: 100%;
+		justify-content: flex-start;
 	}
   
 	.navbar a, .dropdown {
-	  float: none;
 	  width: 100%;
-	  text-align: left;
 	  /* Make links and dropdown items full width */
 	}
   
@@ -150,8 +150,15 @@ body {
 	  /* Position dropdown content absolutely */
 	  top: 100%;
 	  /* Place dropdown content below the dropdown button */
-	  left: 0;
-	  /* Align dropdown content with the left side */
+	}
+	.dropdown .dropbtn{
+		padding-left: 0%;
+	}
+	
+	.navbar,
+	.dropdown {
+		justify-content: flex-start;
+		/* Align items to the start of the container */
 	}
   }
 
