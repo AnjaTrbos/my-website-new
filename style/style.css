@@ -133,6 +133,8 @@ body {
 		/* Set position to relative for absolute positioning of dropdown */
 		width: 100%;
 		align-items: flex-start;
+		border-top: none;
+		border-bottom: none;
 	}
   
 	.navbar a, .dropdown {
