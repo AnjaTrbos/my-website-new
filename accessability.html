@@ -86,20 +86,20 @@
           <h2 id="introduction">Introduction</h2>
           <!-- container for everything in pink, before the boxes with canteen library and auditorim, used for flex-->
           <div  class="top-container">
-            <img src="" alt="" title="">
+            <img src="media/website-access.png" alt="Icons for accesability on a blue backgrouns" title="Photo by Beau Peters, Source https://www.websitepulse.com/">
             <!-- main content paragraph-->
             <p> Accessibility is a law that every website must be built on. Everyone has functional limitations at some point that make the use of technology not as easy as it was intended.</p>
           </div>
           <h2 id="rules-followed">Mesures we took to make our website accessible</h2>
-          <p> What we did to achieve this was first make the page scalable on multiple device sizes. The other thing that we did was make the colors have good contrast for better visibility.  </p>
-          <p>We also focused on having a simple website where everything that should be in focus is brightly colored. We choose to make most of the content pretty big and visible just to ensure that someone with the weaker sight will be able to see. </p> 
+          <p> What we did to achieve this was first make the page scalable on multiple device sizes. This was a hard job that in our opinion we didnt do as well as we should have, becasue we spent too much time focusing on the bigger screen sizes. The other thing that we did was make the colors have good contrast for better visibility.  </p>
+          <p>We also focused on having a simple website where everything that should be in focus is brightly colored. We choose to make most of the content pretty big and visible just to ensure that someone with weaker sight will be able to see. </p> 
           <p>We also choose to focus on good navigation choices. We made a very visible nav on top of the page to allow the user to see the next possible option all the time. The nav also has dropdown menus to take the reader to different parts of the next if they don’t want to look through the whole text and look for a certain section. The buttons in the navigation bar also have a hoover function just for the added feedback to the user so that they are certain to where they are. </p>
-          <img src="" alt="" title="">
+          <img src="media/example1.png" alt="Picture of the index page as an example of bright and big" title="Example where we focused on visibiilty">
           <p>We also made sure to include descriptive alternative text under all images so when the text is read with a reading tool it will help those who cannot see the pictures but allow them to understand what that picture is. </p>
           <p>We broke the text into smaller readable paragraphs all with relevant headings and titles, so the user doesn’t have to read through big chunks of text. We did this to make sure that the text is readable and understandable. </p>
-          <img src="" alt="image of an example of big text">
+          <img src="media/example2.png" alt="image of an example of big text">
           <p>All the links we made sure to keep in their distinctive blue and purple color so that the user is certain to be able to tell what the link Is and where it leads to so that they don’t have to doubt on clicking on the wrong thing. We also added a hoover effect over the links in the source on the technology and accessibility page. </p>
-          <img src="" alt="a screenshot of how the links look">
+          <img src="media/example3.png" alt="a screenshot of how the links look">
           <h2>Lighthouse test</h2>
           <p>We a ran the lighthouse automated accessibility test and made changes according to it. </p>
           <!-- containter for boxes about different parts of the building that are different colors  -->
@@ -108,23 +108,41 @@
             <!-- first container in the row of parts of the building -->
             <div class="library">
               <h2>Main page changes</h2>
-              <img src="" alt="test before the changes ">
-              <p>changes made</p>
-              <img src="" alt="test after the changes">
+              <img src="media/index-before.png" alt="test before the changes " title="lighthouse test before changes for index page">
+              <h3>Changes made after testing</h3>
+              <li>
+                <ul>Added aria labels to the footer</ul>
+                <ul>Changed the main color for better contrast</ul>
+                <ul>Changed the medium container color for better contrast</ul>
+              </li>
+              <img src="media/index-after.png" alt="test after the changes" title="lighthouse test after changes for index page">
             </div>
             <!-- second container in the row of parts of the building -->
-            <div id="" class="canteen">
+            <div  class="canteen">
               <h2>P 32 changes </h2>
-              <img src="" alt="test before the changes ">
-              <p>changes made</p>
-              <img src="" alt="test after the changes">
+              <img src="media/p32-before.png" alt="test before the changes " title="lighthouse test before changes for p32 page">
+              <h3>Changes made after testing</h3>
+              <li>
+                <ul>Added aria labels to the footer</ul>
+                <ul>Changed the main color for better contrast</ul>
+                <ul>Changed the medium container color for better contrast</ul>
+                <ul>fixed the size of images</ul>
+              </li>
+              <p>We made the same changed to the p48 page as well but tested only this one because they loook the same</p>
+              <p>The accesability was still not 100 after all teh changes becasue the colors of containters dont matchwith teh backgroud color but we decided to keep it because it doesnt make the text less visible</p>
+              <img src="media/p32-after.png" alt="test after the changes"title="lighthouse test after changes for p32 page">
             </div>
             <!-- third container in the row of parts of the building -->
-            <div id="" class="auditorium">
+            <div  class="auditorium">
               <h2>Technology and sustainability changes </h2>
-              <img src="" alt="test before the changes ">
-              <p>changes made</p>
-              <img src="" alt="test after the changes">
+              <img src="media/t-s-before.png" alt="test before the changes "title="lighthouse test before changes for data100 page">
+              <h3>Changes made after testing</h3>
+              <p>Since most of the changes from previous pages we applied to this one, before testing it there wasnt much to fix by the time we got to this page.</p>
+              <li>
+                <ul>Changed colors for better contrast</ul>
+                <ul>Changed link color to blue</ul>
+              </li>
+              <img src="media/t-s-after.png" alt="test after the changes" title="lighthouse test after changes for data100 page ">
             </div>
           </div>
         </div>
