@@ -506,6 +506,12 @@ body {
 	display: flex;
 	justify-content: space-around;
   }
+  .accesability-container img{
+	max-width: 50%;
+  }
+  .content-container h3{
+	color: #fff;
+  }
 
   
   
