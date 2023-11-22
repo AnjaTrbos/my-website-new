@@ -2,39 +2,37 @@
 body {
 	background-color: #333;
 }
-
 /* Navbar container */
 /* Navbar taken and changed from https://www.w3schools.com/Css/css_dropdowns.asp */
 .full-nav {
-	border-top-width: 2%;
+	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: #fff;
-	border-bottom-width: 2%;
+	border-bottom-width: 4px;
 	border-bottom-style: solid;
 	border-bottom-color: #fff;
 	display: flex;
-	/* Use flexbox to align elements horizontally */
+   /* flexbox to align elements horizontally */
 	justify-content: space-between;
-	/* Distribute space between elements */
+   /* Distribute space between elements */
 	align-items: center;
-	/* Vertically center the elements */
+   /* Vertically center the elements */
 	padding-top: 0%;
 	padding-right: 2%;
 	padding-bottom: 0%;
 	padding-left: 2%;
 }
-
 /*Everything inside the nav bar*/
 .navbar {
 	display: inline;
-	/*  making the element inline */
+   /* making the element inline */
 	overflow: hidden;
-	/* Hide any content that overflows the boundaries of the element */
+   /* Hide any content that overflows the boundaries of the element */
 	background-color: #333;
 	font-family: Arial;
 }
-
 /* Links inside the navbar */
+/* All the padding values are written in long hand because it was storngly recommended, even though it takes less space to write it all on one line */
 .navbar a {
 	float: left;
 	font-size: 100%;
@@ -46,13 +44,11 @@ body {
 	padding-left: 6%;
 	text-decoration: none;
 }
-
 /* The dropdown container */
 .dropdown {
 	float: left;
 	overflow: hidden;
 }
-
 /* Dropdown buttons with the names of the individual pages */
 .dropdown .dropbtn {
 	font-size: 100%;
@@ -60,53 +56,44 @@ body {
 	outline: none;
 	color: white;
 	padding-top: 14px;
-	/*padding is in pixels here becasue the icon for dropdown moves if its not*/
+   /*padding is in pixels here becasue the icon for dropdown moves if its not, do not change to procent*/
 	padding-right: 16px;
 	padding-bottom: 14px;
 	padding-left: 16px;
 	background-color: inherit;
 	font-family: inherit;
-	/* Important for vertical align on mobile phones */
+   /* Important for vertical align on mobile phones */
 	margin: 0;
-	/* Important for vertical align on mobile phones */
+   /* Important for vertical align on mobile phones */
 }
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-	background-color: #F45B69;
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #f45b69;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	box-shadow:
-		0px
-		/* horizontal offset */
-		,
-		8px
-		/* vertical offset */
-		,
-		16px
-		/* blur radius */
-		,
-		0px
-		/* spread radius */
-		,
-		#00000033;
-	/* color */
+	box-shadow: 0px 
+   /* horizontal offset */
+   , 8px 
+   /* vertical offset */
+   , 16px 
+   /* blur radius */
+   , 0px 
+   /* spread radius */
+   , #00000033;
+   /* color */
 	z-index: 1;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
 	float: none;
 	color: #000;
 	padding-top: 12px;
-	/* values here also had to be in pixels to prevent moving*/
+   /* values here also had to be in pixels to prevent moving*/
 	padding-right: 16px;
 	padding-bottom: 12px;
 	padding-left: 16px;
@@ -114,66 +101,57 @@ body {
 	display: block;
 	text-align: left;
 }
-
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
 	background-color: #ddd;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
 	display: block;
 }
-/* Add this media query for nav responsiveness on small screens */
+/* media query for nav responsiveness on small screens */
 @media screen and (max-width: 600px) {
-	.full-nav{
+	.full-nav {
 		flex-direction: column;
-		/* Stack items vertically */
+	   /* Stack items vertically */
 		position: relative;
-		/* Set position to relative for absolute positioning of dropdown */
+	   /* Set position to relative for absolute positioning of dropdown */
 		width: 100%;
 		align-items: flex-start;
+	   /*alight items to the left*/
 		border-top: none;
+	   /*remove top border*/
 		border-bottom: none;
-	}
-  
+	   /*remove bottom border*/
+   }
 	.navbar a, .dropdown {
-	  width: 100%;
-	  /* Make links and dropdown items full width */
-	}
+		width: 100%;
+	   /* Make links and dropdown items full width */
+   }
 	.dropdown {
 		border-bottom-style: solid;
+	   /*add bottom border under all items*/
 		border-bottom-color: #fff;
-
-		/* Make links and dropdown items full width */
-	  }
-  
+   }
 	.dropdown {
-	  position: static;
-	  /* Reset position to static to prevent overlap with other elements */
-	}
-  
+		position: static;
+	   /* Reset position to static to prevent overlap with other elements */
+   }
 	.dropdown-content {
-	  position: absolute;
-	  /* Position dropdown content absolutely */
-	  top: 100%;
-	  /* Place dropdown content below the dropdown button */
-	}
-	
-	
-	
-  }
-
+		display: none;
+	   /*the dropdown content is displayed under idivividual buttons */
+   }
+}
+/*Index page*/
 /* Style for the container box */
 .big-container {
-	background-color: #C74D62;
+	background-color: #c74d62;
 	padding: 5%;
 	display: flex;
 	align-items: center;
 	margin: 2%;
 	flex: 1;
 }
-
 /* Style for the title inside the big conrtainer on the main page */
 .main-title {
 	font-family: Inter;
@@ -181,7 +159,6 @@ body {
 	font-weight: bold;
 	color: #fff;
 }
-
 /* Style for the paragraph under the title on the main page inside the big container */
 .main-paragraph {
 	font-family: Inter;
@@ -191,25 +168,20 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
-
-/*  The first  image of oslomet inside the big container on the main page  */
+/* The first image of oslomet inside the big container on the main page */
 .front-image {
 	max-width: 50%;
 	margin-left: 5%;
 	height: auto;
 }
-
 /* The medium blue box under the main container on the main page*/
 .medium-container {
-	background-color: #9ABAD6;
-	;
+	background-color: #9abad6;
 	padding: 3%;
 	display: block;
 	margin: 2%;
 	flex: 2;
-
 }
-
 /*The title inside the medium blue container on the main page */
 .campus-title {
 	font-family: Inter;
@@ -217,7 +189,6 @@ body {
 	font-weight: bold;
 	color: #494848;
 }
-
 /* The paragraph under the title and inside the blue container on the main page */
 .campus-paragraph {
 	font-family: Inter;
@@ -225,24 +196,21 @@ body {
 	color: #494848;
 	font-weight: bold;
 }
-
-/*  The image of the map inside the blue medium container */
+/* The image of the map inside the blue medium container */
 .map-image {
 	margin: 5%;
 	max-width: 50%;
 	padding: 2%;
 	height: auto;
 }
-
 /*Third and the smallest container on the main page */
 .small-container {
-	background-color: #DCFDD9;
+	background-color: #dcfdd9;
 	padding: 2%;
 	display: block;
 	margin: 2%;
 	flex: 1;
 }
-
 /* The title in the small container */
 .buildings {
 	font-size: 150%;
@@ -250,7 +218,6 @@ body {
 	font-weight: bold;
 	color: #000000;
 }
-
 /*The text with the list of bulidings in the small container */
 .building-list {
 	margin-top: 4%;
@@ -258,31 +225,244 @@ body {
 	font-family: Inter;
 	color: #000000;
 	font-weight: bold;
-
 }
-
 /* The image inside the small container under the list on the front page */
 .pilestredet-image {
 	margin-top: 5%;
 	max-width: 100%;
 	height: auto;
 }
-
 /*Flex for the medium and small container so that they are next to each other */
-.medium-small-grid {
+.medium-small-flex {
 	display: flex;
 }
+@media screen and (max-width: 720px) {
+   /* fixing the size of items in the main container for the small screen*/
+	.big-container {
+		flex-direction: column;
+   }
+	.main-title {
+		font-size: 100%;
+   }
+	.main-paragraph {
+		font-size: 100%;
+   }
+	.front-image {
+		max-width: 100%;
+   }
+   /*moving the containers under eachother on smaller screens*/
+	.medium-small-flex {
+		flex-direction: column;
+   }
+   /*Resizing the text in the medium container*/
+	.campus-title {
+		font-size: 100%;
+   }
+	.campus-paragraph {
+		font-size: 100%;
+   }
+   /*centering the image in the medium container*/
+	.map-image {
+		padding-left: 15%;
+   }
+   /*Fixing the size of text in the small container*/
+	.buildings {
+		font-size: 100%;
+   }
+	.building-list {
+		font-size: 70%;
+   }
+}
+/*p32 and p48 pages*/
+/* Style for the main container around everything between nav and footer on p32 and p48 pages */
+.main-container {
+	margin: 2%;
+	background-color: #c74d62;
+	color: #fff;
+	padding: 3%;
+	font-family: Inter;
+	font-size: 110%;
+}
+/*container before the new containers with parts of the building*/
+.flex-for-p32-p48-container {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+}
+/* Style for the main container headings */
+.main-container h1, .main-container h2 {
+	color: #130201;
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+/* Pictures before the parts of the buildings container */
+.flex-for-p32-p48-container img {
+	max-width: 20%;
+	margin: 2%;
+}
+/* Pictures in the parts of the buildings container */
+.three-diffrent-colors-container img {
+	max-width: 70%;
+	margin: 2%;
+}
 
+/* Style for the main container paragraphs */
+.main-container p {
+	color: #fff;
+	line-height: 1.5;
+	padding: 2%;
+}
+/* Style for the content container */
+.three-diffrent-colors-container {
+	display: flex;
+}
+/* color for headings in the container*/
+.three-diffrent-colors-container h2, h3 {
+	color: #fff;
+}
+/* Style for .first-in-row-container */
+.first-in-row-container {
+	flex: 1;
+	background-color: #9abad6;
+	padding: 2%;
+	margin: 1%;
+}
+/* Style for second-in-row-container */
+.second-in-row-container {
+	flex: 1;
+	background-color: #2e7fa1;
+	padding: 2%;
+	margin: 1%;
+}
+/* Style for third-in-row-container */
+.third-in-row-container {
+	flex: 1;
+	background-color: #914658;
+	padding: 2%;
+	margin: 1%;
+}
+/*acessablity page*/
+/*adjusting the size of the images */
+.accesability-container img {
+	max-width: 50%;
+}
+@media screen and (max-width: 720px) {
+   /*all the boxes with parts of the building become a column instead of a row*/
+	.three-diffrent-colors-container {
+		flex-direction: column;
+   }
+   /*padding so the pictures in the containers are in the middle*/
+	.three-diffrent-colors-container img {
+		width: 100%;
+		padding-left: 15%;
+   }
+   /*Adjusting the p48 page for smaller screens, instead of row to columns*/
+	.flex-for-p32-p48-container {
+		flex-direction: column;
+   }
+	.flex-for-p32-p48-container img {
+		max-width: 50%;
+   }
+}
+/* technology and sustainablity page*/
+.overlay-container h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+   /* Ensure the title appears above the image */
+	font-size: 800%;
+}
+/* selector to control the size and position of the main image*/
+.overlay-container img {
+	width: 100%;
+	height: auto;
+	display: block;
+	opacity: 50%;
+}
+/* Style for the main container */
+.t-and-s-main-container {
+	margin: 2%;
+	background-color: #a1b3f5;
+	color: #000;
+	padding: 3%;
+	font-family: "Play", sans-serif;
+	font-size: 100%;
+}
+/*container to split the content into 2 columns*/
+.column-container {
+	margin: 5%;
+	columns: 2;
+	max-width: 100%;
+}
+/*ensure that the images here take the right amount of space*/
+.column-container img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+   /* This ensures that the margin is applied correctly */
+	margin: 0 auto 20px;
+   /* Center the image horizontally and add some space below each image */
+}
+/* Style for main container headings */
+.t-and-s-main-container h2, .t-and-s-main-container h3 {
+	color: #93012e;
+	font-weight: bold;
+}
+/* Style for main container paragraphs */
+.t-and-s-main-container p {
+	color: #333;
+	line-height: 1.6;
+}
+/* Style for links */
+.t-and-s-main-container a {
+	color: #0000ff;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+/*Hoover over links*/
+.t-and-s-main-container a:hover {
+	color: #f45b69;
+}
+/* technology and sustainablity page, for medium screens*/
+@media screen and (max-width: 1000px) {
+   /* fixes the size of the main title*/
+	.overlay-container {
+		font-size: 80%;
+   }
+}
+/* technology and sustainablity page, and accesability for smaller screens*/
+@media screen and (max-width: 720px) {
+   /* fix the size of the font of the title*/
+	.overlay-container {
+		font-size: 30%;
+   }
+   /* fix the postition of the font of the title*/
+	.overlay-container h1 {
+		margin-top: 15%;
+   }
+   /* make the content into 1 column*/
+	.column-container {
+		columns: 1;
+   }
+	.accesability-container img {
+		max-width: 100%;
+   }
+}
 /*Footer found and changed from https://codepen.io/alvarotrigo/pen/ZExxeRz*/
 .footer {
 	background: #d8d0d0;
 	padding-top: 3%;
 	padding-bottom: 0%;
-	font-family: 'Play', sans-serif;
+	font-family: "Play", sans-serif;
 	text-align: center;
 	margin-top: 20%;
 }
-
 /*The first part of the footer with all the social media icons in it */
 .footer .row {
 	width: 100%;
@@ -291,24 +471,20 @@ body {
 	color: #333;
 	font-size: 80%;
 }
-
 /*Link style for teh social media icons in the first row of the footer*/
 .footer .row a {
 	text-decoration: none;
 	color: #333;
 	transition: 0.5s;
 }
-
 /*Icons in the footer change color when being hooverd over*/
 .footer .row a:hover {
 	color: #fff;
 }
-
 /*with of the first row in the footer*/
 .footer .row ul {
 	width: 100%;
 }
-
 /*elements in the first row of footer to inline*/
 .footer .row ul li {
 	display: inline-block;
@@ -317,214 +493,24 @@ body {
 	margin-bottom: 0%;
 	margin-left: 3%;
 }
-
 /*iocns in the footer*/
 .footer .row a i {
 	font-size: 200%;
 	margin: 0% 1%;
 }
-
 /*smaller screen for footer*/
-@media (max-width:720px) {
+@media (max-width: 720px) {
 	.footer {
 		text-align: left;
 		padding: 5%;
-	}
-
+   }
 	.footer .row ul li {
 		display: block;
 		margin-top: 5%;
 		margin-bottom: 0%;
 		text-align: left;
-	}
-
+   }
 	.footer .row a i {
 		margin: 0% 3%;
-	}
+   }
 }
-
-/*p32 and p48 pages*/
-/* Style for the main container on p32 and p48 pages */
-.main-container {
-	margin: 2%;
-	background-color: #C74D62;
-	color: #fff;
-	padding: 3%;
-	font-family: Inter;
-	font-size: 110%;
-}
-.top-container{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-}
-
-/* Style for the main container headings */
-.main-container h1,
-.main-container h2,
-.main-container h3 {
-	color: #130201;
-	font-weight: bold;
-	font-size: 200%;
-	margin-bottom: 2%;
-	margin-top: 2%;
-}
-.top-container img{
-  max-width: 20%;
-  margin: 2%;
-}
-.content-container img{
-  max-width: 70%;
-  margin: 2%;
-}
-.pink-container img{
-  max-width: 20%;
-  margin: 2%;
-}
-.p32-container{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-}
-/* Style for the main container paragraphs */
-.main-container p {
-	color: #fff;
-	line-height: 1.5;
-  padding: 2%;
-}
-
-/* Style for the content container */
-.content-container {
-	display: flex;
-}
-
-/* Style for library container */
-.library {
-	flex: 1;
-	background-color: #9ABAD6;
-	padding: 2%;
-	margin: 1%;
-	box-sizing: border-box;
-}
-
-/* Style for canteen container */
-.canteen {
-	flex: 1;
-	background-color: #2E7FA1;
-	padding: 2%;
-	margin: 1%;
-	box-sizing: border-box;
-}
-
-/* Style for auditorium container */
-.auditorium {
-	flex: 1;
-	background-color: #914658;
-	padding: 2%;
-	margin: 1%;
-	box-sizing: border-box;
-}
-
-/* Style for headings and paragraphs within containers */
-.library h2,
-.canteen h2,
-.auditorium h2,
-.library p,
-.canteen p,
-.auditorium p {
-	color: #fff;
-}
-
-/* technology and sustainablity page*/
-.main-container-new {
-  position: relative;
-}
-
-.overlay-container {
-  position: relative;
-}
-
-
-.overlay-container h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; 
-  text-align: center; 
-  z-index: 1; /* Ensure the title appears above the image */
-  font-size: 800%;
-}
-
-.overlay-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 50%;
-}
-
-/* Style for the main container */
-.main-container-new {
-	margin: 2%;
-	background-color: #A1B3F5;
-	color: #000;
-	padding: 3%;
-	font-family: 'Play', sans-serif;
-	font-size: 100%;
-}
-.column-container{
-  margin: 5%;
-  columns: 2;
-  max-width: 100%; 
- height: auto;
-
-}
-.column-container img {
-	max-width: 100%;
-	height: auto;
-	display: block; /* This ensures that the margin is applied correctly */
-	margin: 0 auto 20px; /* Center the image horizontally and add some space below each image */
-  }
-/* Style for main container headings */
-.main-container-new h2,
-.main-container-new h3 {
-	color: #93012E;
-	font-weight: bold;
-}
-
-/* Style for main container paragraphs  */
-.main-container-new p {
-	color: #333;
-	line-height: 1.6;
-}
-
-/* Style for links */
-.main-container-new a {
-	color: #0000FF;
-	text-decoration: none;
-	transition: color 0.2s;
-}
-
-/*Hoover over links*/
-.main-container-new a:hover {
-	color: #F45B69;
-}
-
-/* Style for large screens */
-.full-nav {
-	display: flex;
-	justify-content: space-around;
-  }
-  .accesability-container img{
-	max-width: 50%;
-  }
-  .content-container h3{
-	color: #fff;
-  }
-
-  
-  
-
-  
-
-  
